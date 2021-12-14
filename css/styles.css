@@ -378,6 +378,7 @@ body {
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
+  background-color: #f5f4fa;
 }
 .about-img + .about-img {
   margin-right: 0;
