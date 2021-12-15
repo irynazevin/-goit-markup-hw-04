@@ -520,7 +520,7 @@ body {
 .clients-heading {
   font-weight: bold;
   font-size: 36px;
-  line-height: 42px;
+  line-height: 1.16px;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
@@ -539,9 +539,8 @@ body {
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
-  align-items: center;
-  justify-content: center;
 }
+
 .clients-item + .clients-item {
   margin-left: 0px;
 }
