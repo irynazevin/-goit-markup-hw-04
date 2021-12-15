@@ -217,11 +217,15 @@ body {
 .keys-portfolio {
   margin-bottom: 50px;
 }
-.keys .backlight-button :hover,
-.keys .backlight-button :focus {
+.keys .backlight-button:hover,
+.keys .backlight-button:focus {
   color: #2196f3;
 }
-
+.portfolio-li:hover,
+.portfolio-li:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 /*------------ Внимание к деталям ----------------*/
 .about {
   padding-top: 89px;
@@ -383,7 +387,8 @@ body {
 .about-img + .about-img {
   margin-right: 0;
 }
-.masters-social-link:hover {
+.masters-social-link:hover,
+.masters-social-link:focus {
   background-color: #2196f3;
   color: #ffffff;
 }
@@ -409,8 +414,6 @@ body {
 }
 .footer-right {
   margin-left: 70px;
-  margin-top: 75px;
-  margin-bottom: 97px;
 }
 /* -------portfolio ------ */
 
@@ -454,8 +457,6 @@ body {
   background: #ffffff;
   border: 1px solid #eeeeee;
   box-sizing: border-box;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .portfolio-li:nth-child(3n) {
   margin-right: 0;
@@ -491,8 +492,15 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  margin-top: 9px;
 }
+.footer-address {
+  margin-top: 20px;
+  margin-bottom: 9px;
+}
+.class-links-footer {
+  margin-bottom: 9px;
+}
+
 .footer-telephone,
 .menu-links-footer {
   color: rgba(255, 255, 255, 0.6);
@@ -502,17 +510,14 @@ body {
   font-weight: 700;
   font-style: normal;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 /* ------------clients----------- */
 .clients {
   padding-top: 94px;
   padding-bottom: 91px;
 }
-.clients-ul {
-  display: flex;
-}
 .clients-heading {
-  font-style: normal;
   font-weight: bold;
   font-size: 36px;
   line-height: 42px;
@@ -521,31 +526,43 @@ body {
   color: #212121;
   margin-bottom: 50px;
 }
-
-.clients-social-link:hover,
-.clients-social-link:focus {
-  background-color: #ffffff;
-  border: #2196f3;
+.clients-item {
+  color: #afb1b8;
+}
+.clients-link:hover,
+.clients-link:focus {
+  color: #2196f3;
+  border: 1px solid;
 }
 .clients-img {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
+  align-items: center;
+  justify-content: center;
 }
-.clients-social-item + .clients-social-item {
+.clients-item + .clients-item {
   margin-left: 0px;
 }
-.clients-social-link {
-  color: #afb1b8;
-}
-.clients-social-icon {
-  fill: currentColor;
+.clients-link {
   width: 170px;
   height: 92px;
+  display: flex;
+  color: #afb1b8;
   border: 1px solid #afb1b8;
   box-sizing: border-box;
   border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 16px;
+}
+.clients-item {
   margin-right: 30px;
   color: #afb1b8;
+}
+.clients-icon {
+  justify-content: center;
+  align-items: center;
+  fill: currentColor;
 }
