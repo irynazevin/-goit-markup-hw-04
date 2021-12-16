@@ -10,6 +10,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700;900&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
@@ -44,7 +45,7 @@
   <section class="hero">
     <div class="container">
         <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-        <button type="button" class="bt-hero">Заказать услугу</button>
+        <button type="button" class="bt-hero" data-modal-open>Заказать услугу</button>
     </div>
   </section>    
 
@@ -120,18 +121,33 @@
                      alt="человек печатает"
                      width="370" 
                      height="294"/>
+                     <div class="works-animation">
+                         <p class="works-animation-titlt">
+                             Десктопные приложения
+                         </p>
+                     </div>
                 </li>
                 <li class="work-heading-li2">
                     <img src="images/2.jpg" 
-                    alt="Человек держит в руке телефон на столе компьютер"
+                    alt="Человек держит в руке телефон"
                      width="370" 
                     height="294"/>
+                    <div class="works-animation">
+                        <p class="works-animation-titlt">
+                            Мобильные приложения
+                        </p>
+                    </div>
                 </li>
                 <li class="work-heading-li3">
                     <img src="images/3.jpg"
                      alt="Планшет с изображением"
                       width="370" 
                      height="294"/>
+                    <div class="works-animation">
+                        <p class="works-animation-titlt">
+                            Дизайнерские решения
+                        </p>
+                    </div>
                 </li>
             </ul>
         </div>
@@ -460,14 +476,18 @@
     </section>
 
 </footer>
-<div class="backdrop">
+<div class="backdrop is-hidden" data-modal>
     <div class="modal">
-        <button type="button">
+        <button type="button" class="modal-close-btn" data-modal-close>
+            <svg class="button-icon" width="11" height="11">
+                <use href="./images/icons/symbol-defs.svg#icon-Vector-1">
+                </use>
+            </svg>
 
         </button>
 
     </div>
-
+    <script src="./js/modal.js"></script>
 </div>
 </body>
 </html>
